@@ -4,6 +4,25 @@ import logo from './logo.svg'
 import './App.css'
 
 class App extends Component {
+  constructor(porps) {
+    super(porps)
+    this.state = {
+      count: 0,
+    }
+  }
+
+  handleIncreaseNumber = () => {
+    this.setState(state => ({
+      count: state.count + 1,
+    }))
+  }
+
+  handleDecreaseNumber = () => {
+    this.setState(state => ({
+      count: state.count - 1,
+    }))
+  }
+
   render() {
     return (
       <div className='App'>
@@ -12,6 +31,9 @@ class App extends Component {
           <Link className='App-link' to={'/users'}>
             Users Page
           </Link>
+          <div>{this.state.count}</div>
+          <button onClick={this.handleIncreaseNumber}>Increase</button>
+          <button onClick={this.handleDecreaseNumber}>Decrease</button>
         </header>
       </div>
     )
