@@ -31,9 +31,13 @@ class App extends Component {
           <Link className='App-link' to={'/users'}>
             Users Page
           </Link>
-          <div>{this.state.count}</div>
-          <button onClick={this.handleIncreaseNumber}>Increase</button>
-          <button onClick={this.handleDecreaseNumber}>Decrease</button>
+          <div name='count'>{this.state.count}</div>
+          <button name='increase' onClick={this.handleIncreaseNumber}>
+            Increase
+          </button>
+          <button name='decrease' onClick={this.handleDecreaseNumber}>
+            Decrease
+          </button>
         </header>
       </div>
     )

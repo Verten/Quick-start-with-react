@@ -18,6 +18,7 @@
     "redux-saga": "^1.0.2"
   },
   "scripts": {
+    "nightwatch": "nightwatch",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -31,5 +32,8 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "nightwatch": "^1.0.19"
+  }
 }
