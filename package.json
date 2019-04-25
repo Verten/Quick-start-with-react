@@ -35,5 +35,6 @@
   ],
   "devDependencies": {
     "nightwatch": "^1.0.19"
-  }
+  },
+  "homepage": "http://myname.github.io/demo"
 }
